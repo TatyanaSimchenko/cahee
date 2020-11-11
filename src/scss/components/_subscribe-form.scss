@@ -1,0 +1,21 @@
+.subscribe__input {
+    @include text($H15, 300, $BLACK);
+    width: 571px;
+    padding: 19px 15px 16px 13px;
+    margin-right: 25px;
+    @media screen and (max-width: 830px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (max-width: 600px) {
+      width: 500px
+    }
+    @media screen and (max-width: 540px) {
+      width: 440px
+    }
+    @media screen and (max-width: 470px) {
+      width: 370px
+    }
+    @media screen and (max-width: 400px) {
+      width: 300px
+    }
+}

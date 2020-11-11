@@ -1,0 +1,23 @@
+.gallery {
+  text-align: center;
+  background-color: $GALLERY-BG-COLOR;
+  &__title {
+    @include text($H90, 700, $BLACK);
+    padding-top: 79px;
+    margin-bottom: 23px;
+    @media screen and (max-width: 380px) {
+      font-size: $H70;
+    }
+  }
+  &__description {
+    @include text($H17, 300, $BLACK);
+    line-height: 1.5;
+    text-align: center;
+    max-width: 607px;
+    margin: 0px auto 50px;
+    padding: 0px 15px;
+    @media screen and (max-width: 380px) {
+      font-size: $H15;
+    }
+  }
+}

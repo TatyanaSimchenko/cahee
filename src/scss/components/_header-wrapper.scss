@@ -1,0 +1,7 @@
+.header {
+  &__wrapper {
+    @include flex(space-between, center, row, nowrap);
+    margin-bottom: 265px;
+    padding-top: 18px;
+  } 
+}

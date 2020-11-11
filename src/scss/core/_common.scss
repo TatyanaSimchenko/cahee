@@ -11,8 +11,9 @@ input,
 button,
 textarea,
 select {
-  // font-family: sans-serif;
+  font-family: $base-font;
 }
+// font-family: 'Pacifico', cursive;
 
 ul {
   list-style: none;
@@ -26,3 +27,7 @@ a, button {
   text-decoration: none;
 }
 
+body {
+  margin: 0;
+  width: 100%;
+}

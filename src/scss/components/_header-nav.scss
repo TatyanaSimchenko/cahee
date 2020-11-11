@@ -1,0 +1,26 @@
+.nav {
+  display: flex;
+  margin: 0;
+  padding-top: 45px;
+  &__item {
+    margin-right: 35px;
+    &--link {
+      text-decoration: none;
+      @include text($H16, 700, $BLACK);
+      text-transform: uppercase;
+      border-top: 3px solid transparent;
+      transition: border-top 0.2s ease;
+      &:hover {
+        border-top: 3px solid $ORANGE;
+      }
+    }
+    &--link:last-child {
+      margin-right: 0;
+    }
+  }
+}
+@media screen and (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+}

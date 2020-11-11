@@ -1,3 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;700;900&display=swap');
+
+
 @import './core/vars';
 @import './core/mixins';
 @import './core/common';
+
+//components
+
+//header
+
+@import './components/header-container';
+@import './components/header-wrapper';
+@import './components/header';
+@import './components/header-logo';
+@import './components/header-nav';
+@import './components/header-inner';
+@import './components/btn';
+@import './components/baner';
+@import './components/scroll';
+@import './components/burger';
+@import './components/mobile-nav';
+
+//about
+@import './components/about';
+@import './components/about-container';
+
+//servises
+@import './components/servises';
+@import './components/servises-list';
+@import './components/servise-card';
+@import './components/servises-baner';
+
+
+
+
+
+
+
+

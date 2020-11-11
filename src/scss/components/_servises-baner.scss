@@ -1,0 +1,46 @@
+.servises-baner {
+  @media screen and (max-width: 1000px) {
+    margin-top: 52px;
+  }
+// padding-right: 15px;
+  &__title {
+    position: relative;
+    @include text($H90, 700, $WHITE);
+    top: 189px;
+    left: 31px;
+    z-index: 1;
+    @media screen and (max-width: 1125px) {
+      font-size: $H70;
+      top: 91px;
+    left: 68px;
+    }
+    @media screen and (max-width: 1000px) {
+      font-size: $H50;
+      top: 50px;
+    left: 100px;
+    }
+    @media screen and (max-width: 456px) {
+      font-size: $H40;
+      top: 20px;
+    left: 109px;
+    }
+  }
+  &__img {
+    position: relative;
+    bottom: 119px;
+    left: 119px;
+    @media screen and (max-width: 1125px) {
+      width: 65%;
+    } 
+    @media screen and (max-width: 1000px) {
+      width: 55%;
+    }
+    @media screen and (max-width: 456px) {
+      width: 45%;
+    }
+    
+  }
+}
+
+// @media screen and (max-width: 1200px) 
+ 

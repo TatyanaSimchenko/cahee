@@ -1,0 +1,49 @@
+.servise-card {
+  @include flex(space-between, center, row, nowrap);
+  background-color: $WHITE;
+  margin-bottom: 20px;
+  width: 400px;
+  @media screen and (max-width: 550px) {
+    width: 300px;
+  }
+  @media screen and (max-width: 365px) {
+    width: 265px;
+  }
+  &:hover {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.servises__item {
+  padding-left: 15px;
+  &-title {
+    @include text($H20, 700, $BLACK);
+    width: 285px;
+    height: 103px;
+    text-align: center;
+    padding-top: 37px;
+    padding-left: 16px;
+    padding: 36px 0px ;
+    @media screen and (max-width: 550px) {
+      @include text($H17, 700, $BLACK);
+    width: 185px;
+    @media screen and (max-width: 365px) {
+      @include text($H15, 700, $BLACK);
+      width: 150px;
+    }
+    }
+  }
+  &-line {
+    position: relative;
+    width: 1px;
+    height: 103px;
+    border: 1px solid $GREY;
+    right: 14px;
+  }
+  &-svg {
+    position: relative;
+    right: 20px;
+    top: 7px;
+  }
+}
+

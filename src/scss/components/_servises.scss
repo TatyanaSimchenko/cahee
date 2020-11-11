@@ -1,0 +1,16 @@
+.servises {
+  background-color: $SERVISES-BG-COLOR;
+  &__container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 84px 0 0px;;
+    @include flex(space-between, center, row, wrap);
+    @media screen and (max-width: 1200px) {
+      @include flex(center, center, column-reverse, wrap);
+    }
+    @media screen and (max-width: 930px) {
+      flex-direction: column-reverse;
+    }
+  
+  }
+}

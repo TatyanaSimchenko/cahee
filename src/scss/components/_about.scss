@@ -1,0 +1,61 @@
+.about {
+  min-height: 700px;
+  background: radial-gradient(
+    #00c4c4 0%,
+    #00b7b7 32%,
+    #00adad 68%,
+    #009c9c 100%
+  );
+  background-size: cover;
+  &__img {
+    position: relative;
+    right: 52px;
+    margin-right: 22px;
+    &--image {
+      width: 100%;
+    }
+  }
+  &__info {
+    max-width: 500px;
+    position: relative;
+    top: -42px;
+    padding: 0 15px;
+    left: -15px;
+  }
+  &__title {
+    @include text($H90, 700, $WHITE);
+  }
+  &__text {
+    @include text($H17, 300, $WHITE);
+    line-height: 1.6;
+    margin-bottom: 13px;
+    opacity: 0.8;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .about__img--image {
+    width: 80%;
+    position: relative;
+    left: 90px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about__title {
+    font-size: $H70;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .about__title {
+    font-size: $H50;
+  }
+  .about__img--image {
+    position: relative;
+    left: 75px;
+  }
+}

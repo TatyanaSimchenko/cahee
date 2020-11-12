@@ -15,7 +15,7 @@
     margin-bottom: 15px;
     border-left: 4px solid transparent;
     background: $FORM-BG-COLOR;
-    opacity: 0.7;
+    opacity: 0.4;
     @include text($H15, 700, $WHITE);
     font-family: $base-font;
     @media screen and (max-width: 545px) {

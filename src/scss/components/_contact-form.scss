@@ -1,0 +1,49 @@
+.contact-form {
+  @media screen and (max-width: 1025px) {
+    margin-bottom: 30px;
+  }
+  &__field {
+    margin-right: 170px;
+  }
+  &__input,
+  &__textarea {
+    border: transparent;
+    outline: none;
+    cursor: pointer;
+    width: 495px;
+    padding: 17px;
+    margin-bottom: 15px;
+    border-left: 4px solid transparent;
+    background: $FORM-BG-COLOR;
+    opacity: 0.7;
+    @include text($H15, 700, $WHITE);
+    font-family: $base-font;
+    @media screen and (max-width: 545px) {
+      width: 450px;
+    }
+    @media screen and (max-width: 485px) {
+      width: 400px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 380px;
+    }
+    @media screen and (max-width: 410px) {
+      width: 310px;
+    }
+    @media screen and (max-width: 345px) {
+      width: 280px;
+    }
+    &:active,
+    &:focus {
+      border-left: 4px solid $FORM-ACTIVE-COLOR;
+    }
+    @include placeholder {
+      @include text($H15, 400, $WHITE);
+      opacity: 0.7;
+      font-family: $base-font;
+    }
+  }
+  .textarea {
+    min-height: 250px;
+  }
+}

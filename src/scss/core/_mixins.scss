@@ -113,6 +113,14 @@ $z-index: (
   z-index: z-index($key);
 }
 
+@mixin placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
 /* Screens */
 $screen-iphone-5: 320px;
 $screen-iphone-6: 375px;

@@ -12,7 +12,7 @@
       }
     }
     &--text {
-      @include text($H20, 700, $BLACK);
+      @include text($H20, 300, $BLACK);
       opacity: 0.7;
       @media screen and (max-width: 1025px) {
         color: $WHITE;
@@ -21,7 +21,7 @@
     &--link, &--num {
       cursor: pointer;
       text-decoration: none;
-      @include text($H20, 700, $BLACK);
+      @include text($H20, 300, $BLACK);
       opacity: 0.7;
       @media screen and (max-width: 1025px) {
         color: $WHITE;

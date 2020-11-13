@@ -1,4 +1,11 @@
+.subscribe__form {
+  display: flex;
+  flex-wrap: wrap;
+}
 .subscribe__input {
+outline: none;
+border: none;
+border: 1px solid $BLACK;
     @include text($H15, 300, $BLACK);
     width: 571px;
     padding: 19px 15px 16px 13px;

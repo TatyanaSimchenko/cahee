@@ -1,6 +1,5 @@
 .subscribe {
   background-image: url(../assets/images/subscribe.png);
-  position: relative;
   background-color: $WHITE;
   min-height: 500px;
   background-position: center;
@@ -11,7 +10,7 @@
     top: 140px;
     max-width: 1200px;
     padding: 0 15px;
-    margin: auto;
+    margin: 0 auto;
     display: flex;
     justify-content: flex-start;
     align-items: stretch;

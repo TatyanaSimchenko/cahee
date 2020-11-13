@@ -4,6 +4,9 @@
   }
   &__field {
     margin-right: 170px;
+    @media screen and (max-width: 700px) {
+      margin: 0;
+    }
   }
   &__input,
   &__textarea {

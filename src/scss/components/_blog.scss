@@ -15,5 +15,16 @@
     @include text($H17, 300, $WHITE);
     line-height: 1.6;
     margin: 0 auto;
+    @media screen and (max-width: 700px) {
+      max-width: 500px;
+    }
+    @media screen and (max-width: 600px) {
+      max-width: 400px;
+    }
+    @media screen and (max-width: 410px) {
+      font-size: $H15;
+      max-width: 300px;
+
+    }
   }
 }

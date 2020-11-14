@@ -1,6 +1,10 @@
-.servises__list {
-   padding: 0px 0px 50px 63px;
-  @media screen and (max-width: 810px) {
-    padding: 0 15px;
+.services-list {
+  @include flex(flex-start, flex-start, column, wrap);
+  margin-right: 24px;
+  @media screen and (max-width: 355px) {
+          margin: 0;
+  }
+  &__item:not(:last-of-type) {
+      margin-bottom: 20px;
   }
 }

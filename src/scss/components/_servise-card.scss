@@ -1,54 +1,35 @@
-.servise-card {
+
+.services-card {
   @include flex(space-between, center, row, nowrap);
+  width: 100%;
+  @include media(420px) {
+      width: 400px;
+  }
   background-color: $WHITE;
-  margin-bottom: 20px;
-  width: 400px;
-  @media screen and (max-width: 550px) {
-    width: 300px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.2s ease;
+  @include hover() {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   }
-  @media screen and (max-width: 365px) {
-    width: 250px;
+  &__name {
+      @include text($H20, 700);
+      line-height: 27px;
+      margin: 0 40px;
+      @include media(420px) {
+          margin: 0 70px;
+      }
+      text-align: center;
+      &--domestic {
+      margin: 0 30px;
+      }
   }
-  &:hover {
-    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  &__icon {
+      width: 47px;
+      height: 44px;
   }
-}
-
-.servises__item {
-  padding-left: 15px;
-  &-title {
-    @include text($H20, 700, $BLACK);
-    width: 285px;
-    height: 103px;
-    text-align: center;
-    padding-top: 37px;
-    padding-left: 16px;
-    padding: 36px 0px ;
-    @media screen and (max-width: 550px) {
-      @include text($H17, 700, $BLACK);
-    width: 185px;
-    @media screen and (max-width: 365px) {
-      @include text($H15, 700, $BLACK);
-      width: 150px;
-    }
-    }
-  }
-  &-line {
-    position: relative;
-    width: 1px;
-    height: 103px;
-    border: 1px solid $GREY;
-    background-color: $GREY;
-    right: 14px;
-    &--basket {
-      position: relative;
-      right: 24px;
-    }
-  }
-  &-svg {
-    position: relative;
-    right: 20px;
-    top: 7px;
+  &__icon-wrapper {
+      @include flex(center, row, wrap);
+      border-left: 1px solid $GREY;
+      padding: 28px 26px;
   }
 }
-

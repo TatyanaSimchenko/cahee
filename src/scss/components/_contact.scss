@@ -1,7 +1,7 @@
 .contact {
   min-height: 870px;
   display: block;
-  padding: 80px 0 115px;
+  padding: 80px 16px 115px;
   background-image: url(../assets/images/form-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,7 +25,7 @@
   }
   &__inner {
     margin: 0 auto;
-    padding: 0 15px 0 15px;
+    // padding: 0 15px 0 15px;
     max-width: 1180px;
     display: flex;
     flex-wrap: wrap;

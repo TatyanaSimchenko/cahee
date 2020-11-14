@@ -1,12 +1,11 @@
 .servises-baner {
-  @media screen and (max-width: 1000px) {
-    margin-top: 52px;
+  position: relative;
+  top: 44px;
+  left: 64px;
+  @media screen and (max-width: 1200px) {
+    left: -40px;
   }
-  @media screen and (max-width: 456px) {
-    margin-top: 0px;
-    position: relative;
-    top: 37px;
-  }
+
   &__title {
     position: relative;
     @include text($H90, 700, $WHITE);
@@ -20,7 +19,6 @@
     width: 100%;
     @media screen and (max-width: 1125px) {
       font-size: $H70;
-      
       top: 123px;
       left: 30px;
       width: 100%;
@@ -28,20 +26,17 @@
     @media screen and (max-width: 1000px) {
       font-size: $H50;
       top: 65px;
-    left: -7px;
-    width: 70%;
+      left: 39px;
     }
     @media screen and (max-width: 460px) {
-      // font-size: $H30;
-      top: 10px;
-    left: 17px;
-    width: 63%
+      font-size: $H45;
+      top: 58px;
+      left: 45px;
     }
     @media screen and (max-width: 370px) {
-      // font-size: $H30;
-      top: -34px;
-    left: -8px;
-    width: 63%
+      font-size: $H30;
+      top: 6px;
+      left: 36px;
     }
   }
   &__img {
@@ -51,18 +46,8 @@
     @media screen and (max-width: 1125px) {
       width: 65%;
     }
-    @media screen and (max-width: 1000px) {
-      width: 55%;
-    }
-    @media screen and (max-width: 450px) {
-      bottom: 163px;
-      left: 100px;
-    }
-
     @media screen and (max-width: 370px) {
-      left: 85px;
-      bottom: 182px;
-      bottom: 172px;
+      width: 55%;
     }
   }
 }
